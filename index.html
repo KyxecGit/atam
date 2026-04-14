@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATAM МЕБЕЛЬ — Мебель на заказ в Бишкеке</title>
+  <meta name="description" content="ATAM МЕБЕЛЬ — премиальная корпусная мебель на заказ. Кухни, шкафы, спальни, офисы. Бишкек.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__line"></div>
+      <div class="loader__counter" id="loader-counter">0</div>
+      <div class="loader__text">ATAM МЕБЕЛЬ</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__logo">
+      <span class="header__logo-mark">A</span>
+      <span class="header__logo-text">ATAM</span>
+    </div>
+    <nav class="header__nav" id="nav">
+      <a href="#work" class="header__link" data-magnetic>Портфолио</a>
+      <a href="#services" class="header__link" data-magnetic>Услуги</a>
+      <a href="#about" class="header__link" data-magnetic>О нас</a>
+      <a href="#process" class="header__link" data-magnetic>Процесс</a>
+      <a href="#contact" class="header__link" data-magnetic>Контакт</a>
+    </nav>
+    <button class="header__burger" id="burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-menu__nav">
+      <a href="#work" class="mobile-menu__link">Портфолио</a>
+      <a href="#services" class="mobile-menu__link">Услуги</a>
+      <a href="#about" class="mobile-menu__link">О нас</a>
+      <a href="#process" class="mobile-menu__link">Процесс</a>
+      <a href="#contact" class="mobile-menu__link">Контакт</a>
+    </nav>
+    <div class="mobile-menu__footer">
+      <a href="tel:+996702570011">+996 702 570 011</a>
+      <a href="https://instagram.com/atam.mebel.kg" target="_blank">@atam.mebel.kg</a>
+    </div>
+  </div>
+
+  <!-- HERO — SPLIT SCREEN -->
+  <section class="hero" id="hero">
+    <div class="hero__left">
+      <div class="hero__tag">
+        <span class="hero__tag-dot"></span>
+        Бишкек, Кыргызстан
+      </div>
+      <h1 class="hero__title" data-split>
+        <span class="hero__title-line">Мебель,</span>
+        <span class="hero__title-line">которую</span>
+        <span class="hero__title-line"><em>хочется</em></span>
+      </h1>
+      <p class="hero__sub">Проектируем и создаём корпусную мебель, в которую влюбляются с первого взгляда.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary" data-magnetic>
+          <span>Обсудить проект</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#work" class="btn btn--ghost" data-magnetic>
+          <span>Смотреть работы</span>
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="350">0</span>
+          <span class="hero__stat-label">Проектов</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="8">0</span>
+          <span class="hero__stat-label">Лет опыта</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="100">0</span>
+          <span class="hero__stat-label">% Гарантия</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__right">
+      <div class="hero__image-stack">
+        <div class="hero__image hero__image--main">
+          <img src="assets/images/hero-1.jpg" alt="Интерьер ATAM" loading="eager">
+        </div>
+        <div class="hero__image hero__image--float">
+          <img src="assets/images/hero-2.jpg" alt="Мебель ATAM" loading="eager">
+        </div>
+        <div class="hero__image-badge">
+          <span>★ 4.9</span>
+          <small>150+ отзывов</small>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <section class="marquee">
+    <div class="marquee__track">
+      <div class="marquee__content">
+        <span>КУХНИ</span><span class="marquee__dot">◆</span>
+        <span>ШКАФЫ</span><span class="marquee__dot">◆</span>
+        <span>СПАЛЬНИ</span><span class="marquee__dot">◆</span>
+        <span>ОФИСЫ</span><span class="marquee__dot">◆</span>
+        <span>ГОСТИНЫЕ</span><span class="marquee__dot">◆</span>
+        <span>ДЕТСКИЕ</span><span class="marquee__dot">◆</span>
+        <span>ВАННЫЕ</span><span class="marquee__dot">◆</span>
+        <span>ПРИХОЖИЕ</span><span class="marquee__dot">◆</span>
+        <span>КУХНИ</span><span class="marquee__dot">◆</span>
+        <span>ШКАФЫ</span><span class="marquee__dot">◆</span>
+        <span>СПАЛЬНИ</span><span class="marquee__dot">◆</span>
+        <span>ОФИСЫ</span><span class="marquee__dot">◆</span>
+        <span>ГОСТИНЫЕ</span><span class="marquee__dot">◆</span>
+        <span>ДЕТСКИЕ</span><span class="marquee__dot">◆</span>
+        <span>ВАННЫЕ</span><span class="marquee__dot">◆</span>
+        <span>ПРИХОЖИЕ</span><span class="marquee__dot">◆</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORIZONTAL DRAG GALLERY -->
+  <section class="drag-gallery" id="work">
+    <div class="drag-gallery__header reveal">
+      <span class="section-tag">01 / Портфолио</span>
+      <h2 class="section-title">Наши <em>работы</em></h2>
+    </div>
+    <div class="drag-gallery__track" id="drag-track">
+      <div class="drag-gallery__item" data-src="assets/images/kitchen-1.jpg">
+        <img src="assets/images/kitchen-1.jpg" alt="Кухня" loading="lazy">
+        <div class="drag-gallery__overlay">
+          <span class="drag-gallery__cat">Кухня</span>
+          <h3>Современная кухня</h3>
+        </div>
+      </div>
+      <div class="drag-gallery__item" data-src="assets/images/bedroom-1.jpg">
+        <img src="assets/images/bedroom-1.jpg" alt="Спальня" loading="lazy">
+        <div class="drag-gallery__overlay">
+          <span class="drag-gallery__cat">Спальня</span>
+          <h3>Уютная спальня</h3>
+        </div>
+      </div>
+      <div class="drag-gallery__item" data-src="assets/images/living-1.jpg">
+        <img src="assets/images/living-1.jpg" alt="Гостиная" loading="lazy">
+        <div class="drag-gallery__overlay">
+          <span class="drag-gallery__cat">Гостиная</span>
+          <h3>Стильная гостиная</h3>
+        </div>
+      </div>
+      <div class="drag-gallery__item" data-src="assets/images/office-1.jpg">
+        <img src="assets/images/office-1.jpg" alt="Офис" loading="lazy">
+        <div class="drag-gallery__overlay">
+          <span class="drag-gallery__cat">Офис</span>
+          <h3>Рабочее пространство</h3>
+        </div>
+      </div>
+      <div class="drag-gallery__item" data-src="assets/images/wardrobe-1.jpg">
+        <img src="assets/images/wardrobe-1.jpg" alt="Шкаф" loading="lazy">
+        <div class="drag-gallery__overlay">
+          <span class="drag-gallery__cat">Шкафы</span>
+          <h3>Встроенный шкаф</h3>
+        </div>
+      </div>
+      <div class="drag-gallery__item" data-src="assets/images/kitchen-2.jpg">
+        <img src="assets/images/kitchen-2.jpg" alt="Кухня 2" loading="lazy">
+        <div class="drag-gallery__overlay">
+          <span class="drag-gallery__cat">Кухня</span>
+          <h3>Островная кухня</h3>
+        </div>
+      </div>
+      <div class="drag-gallery__item" data-src="assets/images/hall-1.jpg">
+        <img src="assets/images/hall-1.jpg" alt="Прихожая" loading="lazy">
+        <div class="drag-gallery__overlay">
+          <span class="drag-gallery__cat">Прихожая</span>
+          <h3>Просторная прихожая</h3>
+        </div>
+      </div>
+    </div>
+    <div class="drag-gallery__hint">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      Перетащите для просмотра
+    </div>
+  </section>
+
+  <!-- FULLWIDTH IMAGE BREAK -->
+  <section class="image-break">
+    <img src="assets/images/living-2.jpg" alt="Интерьер" loading="lazy">
+    <div class="image-break__overlay">
+      <h2 class="image-break__text">Каждая деталь —<br><em>произведение</em></h2>
+    </div>
+  </section>
+
+  <!-- MASONRY PORTFOLIO -->
+  <section class="masonry" id="portfolio">
+    <div class="masonry__header reveal">
+      <span class="section-tag">02 / Галерея</span>
+      <h2 class="section-title">Детали <em>решают</em></h2>
+    </div>
+    <div class="masonry__grid">
+      <div class="masonry__item masonry__item--tall reveal" data-src="assets/images/kitchen-3.jpg">
+        <img src="assets/images/kitchen-3.jpg" alt="Кухня детали" loading="lazy">
+        <div class="masonry__label">Фурнитура</div>
+      </div>
+      <div class="masonry__item reveal" data-src="assets/images/detail-1.jpg">
+        <img src="assets/images/detail-1.jpg" alt="Детали" loading="lazy">
+        <div class="masonry__label">Текстуры</div>
+      </div>
+      <div class="masonry__item reveal" data-src="assets/images/bathroom-1.jpg">
+        <img src="assets/images/bathroom-1.jpg" alt="Ванная" loading="lazy">
+        <div class="masonry__label">Ванная</div>
+      </div>
+      <div class="masonry__item masonry__item--tall reveal" data-src="assets/images/bedroom-2.jpg">
+        <img src="assets/images/bedroom-2.jpg" alt="Спальня 2" loading="lazy">
+        <div class="masonry__label">Спальня</div>
+      </div>
+      <div class="masonry__item reveal" data-src="assets/images/kids-1.jpg">
+        <img src="assets/images/kids-1.jpg" alt="Детская" loading="lazy">
+        <div class="masonry__label">Детская</div>
+      </div>
+      <div class="masonry__item reveal" data-src="assets/images/dining-1.jpg">
+        <img src="assets/images/dining-1.jpg" alt="Столовая" loading="lazy">
+        <div class="masonry__label">Столовая</div>
+      </div>
+      <div class="masonry__item masonry__item--wide reveal" data-src="assets/images/kitchen-4.jpg">
+        <img src="assets/images/kitchen-4.jpg" alt="Кухня панорама" loading="lazy">
+        <div class="masonry__label">Панорама</div>
+      </div>
+      <div class="masonry__item reveal" data-src="assets/images/detail-2.jpg">
+        <img src="assets/images/detail-2.jpg" alt="Материалы" loading="lazy">
+        <div class="masonry__label">Материалы</div>
+      </div>
+      <div class="masonry__item reveal" data-src="assets/images/office-2.jpg">
+        <img src="assets/images/office-2.jpg" alt="Офис 2" loading="lazy">
+        <div class="masonry__label">Офис</div>
+      </div>
+      <div class="masonry__item reveal" data-src="assets/images/texture-1.jpg">
+        <img src="assets/images/texture-1.jpg" alt="Дерево" loading="lazy">
+        <div class="masonry__label">Дерево</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES — CARDS WITH TILT -->
+  <section class="services" id="services">
+    <div class="services__header reveal">
+      <span class="section-tag">03 / Услуги</span>
+      <h2 class="section-title">Что мы <em>создаём</em></h2>
+    </div>
+    <div class="services__grid">
+      <div class="services__card reveal" data-tilt>
+        <div class="services__card-img">
+          <img src="assets/images/kitchen-1.jpg" alt="Кухни" loading="lazy">
+        </div>
+        <div class="services__card-body">
+          <span class="services__card-num">01</span>
+          <h3>Кухни</h3>
+          <p>От классики до хай-тека. Эргономичные решения с премиум-фурнитурой.</p>
+        </div>
+      </div>
+      <div class="services__card reveal" data-tilt>
+        <div class="services__card-img">
+          <img src="assets/images/wardrobe-1.jpg" alt="Шкафы" loading="lazy">
+        </div>
+        <div class="services__card-body">
+          <span class="services__card-num">02</span>
+          <h3>Шкафы-купе</h3>
+          <p>Встроенные и корпусные. Максимальное использование пространства.</p>
+        </div>
+      </div>
+      <div class="services__card reveal" data-tilt>
+        <div class="services__card-img">
+          <img src="assets/images/bedroom-1.jpg" alt="Спальни" loading="lazy">
+        </div>
+        <div class="services__card-body">
+          <span class="services__card-num">03</span>
+          <h3>Спальни</h3>
+          <p>Кровати, тумбы, комоды — всё для идеального отдыха.</p>
+        </div>
+      </div>
+      <div class="services__card reveal" data-tilt>
+        <div class="services__card-img">
+          <img src="assets/images/office-1.jpg" alt="Офисы" loading="lazy">
+        </div>
+        <div class="services__card-body">
+          <span class="services__card-num">04</span>
+          <h3>Офисная мебель</h3>
+          <p>Столы, стеллажи, кабинеты руководителей.</p>
+        </div>
+      </div>
+      <div class="services__card reveal" data-tilt>
+        <div class="services__card-img">
+          <img src="assets/images/kids-1.jpg" alt="Детские" loading="lazy">
+        </div>
+        <div class="services__card-body">
+          <span class="services__card-num">05</span>
+          <h3>Детские</h3>
+          <p>Безопасные материалы, яркие решения, растущая мебель.</p>
+        </div>
+      </div>
+      <div class="services__card reveal" data-tilt>
+        <div class="services__card-img">
+          <img src="assets/images/bathroom-1.jpg" alt="Ванные" loading="lazy">
+        </div>
+        <div class="services__card-body">
+          <span class="services__card-num">06</span>
+          <h3>Ванные комнаты</h3>
+          <p>Влагостойкие тумбы, зеркальные шкафчики, полки.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG CTA BANNER -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg">
+      <img src="assets/images/kitchen-3.jpg" alt="" loading="lazy">
+    </div>
+    <div class="cta-banner__content reveal">
+      <h2>Готовы к <em>идеальному</em> интерьеру?</h2>
+      <p>Бесплатный замер и 3D-визуализация вашего проекта</p>
+      <a href="#contact" class="btn btn--primary btn--lg" data-magnetic>
+        <span>Бесплатная консультация</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT — HORIZONTAL -->
+  <section class="about" id="about">
+    <div class="about__content">
+      <div class="about__left reveal">
+        <span class="section-tag">04 / О компании</span>
+        <h2 class="section-title">Мы — <em>ATAM</em></h2>
+        <p class="about__text">Более 8 лет мы создаём корпусную мебель, которая становится сердцем каждого дома. 350+ выполненных проектов, собственное производство в Бишкеке и команда профессионалов.</p>
+        <div class="about__features">
+          <div class="about__feature">
+            <div class="about__feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <strong>Гарантия 5 лет</strong>
+              <span>На всю продукцию</span>
+            </div>
+          </div>
+          <div class="about__feature">
+            <div class="about__feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <strong>Своё производство</strong>
+              <span>Полный цикл: от замера до монтажа</span>
+            </div>
+          </div>
+          <div class="about__feature">
+            <div class="about__feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <strong>Сроки от 14 дней</strong>
+              <span>Быстрое изготовление</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__right reveal">
+        <div class="about__image-grid">
+          <div class="about__img about__img--1">
+            <img src="assets/images/detail-1.jpg" alt="Производство" loading="lazy">
+          </div>
+          <div class="about__img about__img--2">
+            <img src="assets/images/texture-1.jpg" alt="Материалы" loading="lazy">
+          </div>
+          <div class="about__img about__img--3">
+            <img src="assets/images/detail-2.jpg" alt="Качество" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="process__header reveal">
+      <span class="section-tag">05 / Процесс</span>
+      <h2 class="section-title">Как мы <em>работаем</em></h2>
+    </div>
+    <div class="process__timeline">
+      <div class="process__step reveal">
+        <div class="process__step-num">01</div>
+        <div class="process__step-content">
+          <h3>Заявка</h3>
+          <p>Вы оставляете заявку — мы связываемся в течение 30 минут</p>
+        </div>
+      </div>
+      <div class="process__step reveal">
+        <div class="process__step-num">02</div>
+        <div class="process__step-content">
+          <h3>Замер</h3>
+          <p>Бесплатный выезд замерщика к вам домой или в офис</p>
+        </div>
+      </div>
+      <div class="process__step reveal">
+        <div class="process__step-num">03</div>
+        <div class="process__step-content">
+          <h3>3D-проект</h3>
+          <p>Создаём реалистичную визуализацию вашей мебели</p>
+        </div>
+      </div>
+      <div class="process__step reveal">
+        <div class="process__step-num">04</div>
+        <div class="process__step-content">
+          <h3>Производство</h3>
+          <p>Изготовление на современном оборудовании из лучших материалов</p>
+        </div>
+      </div>
+      <div class="process__step reveal">
+        <div class="process__step-num">05</div>
+        <div class="process__step-content">
+          <h3>Монтаж</h3>
+          <p>Профессиональная доставка и установка с уборкой после</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews">
+    <div class="reviews__header reveal">
+      <span class="section-tag">06 / Отзывы</span>
+      <h2 class="section-title">Что говорят <em>клиенты</em></h2>
+    </div>
+    <div class="reviews__track" id="reviews-track">
+      <div class="reviews__card reveal">
+        <div class="reviews__stars">★★★★★</div>
+        <p>«Заказали кухню — результат превзошёл все ожидания. Качество материалов и сборки на высшем уровне!»</p>
+        <div class="reviews__author">
+          <strong>Айгуль К.</strong>
+          <span>Кухня на заказ</span>
+        </div>
+      </div>
+      <div class="reviews__card reveal">
+        <div class="reviews__stars">★★★★★</div>
+        <p>«Шкаф-купе сделали за 2 недели. Идеально вписался в нашу спальню. Рекомендую всем!»</p>
+        <div class="reviews__author">
+          <strong>Бакыт Т.</strong>
+          <span>Шкаф-купе</span>
+        </div>
+      </div>
+      <div class="reviews__card reveal">
+        <div class="reviews__stars">★★★★★</div>
+        <p>«Обставили весь офис. Стильно, функционально и в срок. Сотрудники довольны, я тем более.»</p>
+        <div class="reviews__author">
+          <strong>Марат С.</strong>
+          <span>Офисная мебель</span>
+        </div>
+      </div>
+      <div class="reviews__card reveal">
+        <div class="reviews__stars">★★★★★</div>
+        <p>«Детская комната — мечта дочери. Всё продумано до мелочей, безопасные углы, яркие цвета.»</p>
+        <div class="reviews__author">
+          <strong>Динара А.</strong>
+          <span>Детская комната</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="faq__header reveal">
+      <span class="section-tag">07 / FAQ</span>
+      <h2 class="section-title">Частые <em>вопросы</em></h2>
+    </div>
+    <div class="faq__list">
+      <div class="faq__item reveal">
+        <button class="faq__question">
+          <span>Какие сроки изготовления?</span>
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Стандартные сроки — 14–21 рабочий день в зависимости от сложности проекта. Срочные заказы — от 7 дней.</p>
+        </div>
+      </div>
+      <div class="faq__item reveal">
+        <button class="faq__question">
+          <span>Какие материалы вы используете?</span>
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>ЛДСП Egger и Kastamonu, МДФ с плёночным и краш-покрытием, массив дуба и бука. Фурнитура Blum, Hettich, GTV.</p>
+        </div>
+      </div>
+      <div class="faq__item reveal">
+        <button class="faq__question">
+          <span>Замер действительно бесплатный?</span>
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Да, выезд замерщика по Бишкеку — бесплатно. Вы ничем не рискуете.</p>
+        </div>
+      </div>
+      <div class="faq__item reveal">
+        <button class="faq__question">
+          <span>Есть ли гарантия?</span>
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>5 лет гарантии на всю корпусную мебель. На фурнитуру — гарантия производителя.</p>
+        </div>
+      </div>
+      <div class="faq__item reveal">
+        <button class="faq__question">
+          <span>Можно увидеть 3D-проект до заказа?</span>
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Обязательно. Мы не приступаем к производству, пока вы не утвердите 3D-визуализацию вашей мебели.</p>
+        </div>
+      </div>
+      <div class="faq__item reveal">
+        <button class="faq__question">
+          <span>Работаете ли вы за пределами Бишкека?</span>
+          <span class="faq__icon">+</span>
+        </button>
+        <div class="faq__answer">
+          <p>Да, доставка и монтаж по всей Чуйской области. Другие регионы — обсуждаем индивидуально.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__left reveal">
+      <span class="section-tag">08 / Контакт</span>
+      <h2 class="section-title">Давайте <em>создадим</em></h2>
+      <div class="contact__info">
+        <a href="tel:+996702570011" class="contact__info-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <div>
+            <strong>+996 702 570 011</strong>
+            <span>+996 505 509 066</span>
+          </div>
+        </a>
+        <a href="https://instagram.com/atam.mebel.kg" target="_blank" class="contact__info-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+          <div>
+            <strong>@atam.mebel.kg</strong>
+            <span>Instagram</span>
+          </div>
+        </a>
+        <div class="contact__info-item">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <strong>г. Бишкек</strong>
+            <span>ул. Достоевского, 254</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact__schedule">
+        <span>Пн — Сб: 09:00 – 19:00</span>
+        <span>Вс: выходной</span>
+      </div>
+    </div>
+    <div class="contact__right reveal">
+      <form class="contact__form" id="contact-form">
+        <div class="contact__form-row">
+          <div class="contact__field">
+            <input type="text" id="name" placeholder=" " required>
+            <label for="name">Ваше имя</label>
+          </div>
+          <div class="contact__field">
+            <input type="tel" id="phone" placeholder=" " required>
+            <label for="phone">Телефон</label>
+          </div>
+        </div>
+        <div class="contact__field">
+          <select id="service" required>
+            <option value="" disabled selected>Что вас интересует?</option>
+            <option value="kitchen">Кухня</option>
+            <option value="wardrobe">Шкаф-купе</option>
+            <option value="bedroom">Спальня</option>
+            <option value="office">Офисная мебель</option>
+            <option value="kids">Детская</option>
+            <option value="bathroom">Ванная</option>
+            <option value="other">Другое</option>
+          </select>
+        </div>
+        <div class="contact__field">
+          <textarea id="message" rows="4" placeholder=" "></textarea>
+          <label for="message">Сообщение (необязательно)</label>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" data-magnetic>
+          <span>Отправить заявку</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.5!2d74.588!3d42.874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">ATAM</span>
+        <p>Корпусная мебель на заказ<br>в Бишкеке с 2016 года</p>
+      </div>
+      <div class="footer__links">
+        <a href="#work">Портфолио</a>
+        <a href="#services">Услуги</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакт</a>
+      </div>
+      <div class="footer__social">
+        <a href="https://wa.me/996702570011" target="_blank" class="footer__social-link" data-magnetic>WhatsApp</a>
+        <a href="https://instagram.com/atam.mebel.kg" target="_blank" class="footer__social-link" data-magnetic>Instagram</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2024 ATAM МЕБЕЛЬ. Все права защищены.</span>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/996702570011" target="_blank" class="whatsapp-float" data-magnetic>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="back-top" aria-label="Наверх">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightbox-close">✕</button>
+    <button class="lightbox__prev" id="lightbox-prev">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="lightbox__next" id="lightbox-next">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <img class="lightbox__img" id="lightbox-img" src="" alt="">
+    <div class="lightbox__counter" id="lightbox-counter"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
