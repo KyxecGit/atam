@@ -804,7 +804,6 @@ body.cursor-hover .cursor-follower {
   position: relative;
   height: 70vh;
   overflow: hidden;
-  margin-bottom: 120px;
 }
 
 .image-break img {
@@ -839,6 +838,78 @@ body.cursor-hover .cursor-follower {
   font-style: normal;
   color: var(--accent);
   text-shadow: 0 0 60px rgba(200,255,0,.3);
+}
+
+/* --- PORTFOLIO CTA --- */
+.portfolio-cta {
+  padding: 80px var(--pad);
+  background: linear-gradient(135deg, rgba(200,255,0,.05) 0%, transparent 100%);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.portfolio-cta .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.portfolio-cta__content {
+  text-align: center;
+}
+
+.portfolio-cta__content .section-tag {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.portfolio-cta__content h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -2px;
+  line-height: 1.15;
+}
+
+.portfolio-cta__content h2 em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.portfolio-cta__desc {
+  font-size: 18px;
+  color: var(--text-2);
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-cta .btn {
+  display: inline-flex;
+  gap: 10px;
+  padding: 16px 32px !important;
+  font-size: 16px !important;
+  border-radius: 60px !important;
+}
+
+@media (max-width: 768px) {
+  .portfolio-cta {
+    padding: 60px var(--pad);
+  }
+  
+  .portfolio-cta__content h2 {
+    font-size: 2rem;
+  }
+  
+  .portfolio-cta__desc {
+    font-size: 16px;
+  }
+  
+  .portfolio-cta .btn {
+    padding: 14px 24px !important;
+    font-size: 14px !important;
+  }
 }
 
 /* --- MASONRY --- */
@@ -973,48 +1044,6 @@ body.cursor-hover .cursor-follower {
   font-size: 14px;
   color: var(--text-2);
   line-height: 1.7;
-}
-
-/* --- PORTFOLIO CTA --- */
-.portfolio-cta {
-  padding: 4rem var(--pad);
-  max-width: 1400px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
-}
-
-.portfolio-cta__line {
-  flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-}
-
-.portfolio-cta__btn {
-  flex-shrink: 0;
-  padding: 1rem 2rem !important;
-  font-size: 0.95rem !important;
-  border-radius: 60px !important;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-@media (max-width: 768px) {
-  .portfolio-cta {
-    padding: 3rem var(--pad);
-    gap: 1.5rem;
-  }
-  .portfolio-cta__line {
-    display: none;
-  }
-  .portfolio-cta__btn {
-    padding: 0.9rem 1.8rem !important;
-    font-size: 0.85rem !important;
-  }
 }
 
 /* --- CTA BANNER --- */
