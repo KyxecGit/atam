@@ -804,6 +804,7 @@ body.cursor-hover .cursor-follower {
   position: relative;
   height: 70vh;
   overflow: hidden;
+  margin-bottom: 80px;
 }
 
 .image-break img {
