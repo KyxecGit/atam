@@ -309,16 +309,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---- FORM SUBMIT ---- */
+  /* ---- FORM SUBMIT → WHATSAPP ---- */
   const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const service = document.getElementById('service');
+      const serviceText = service.options[service.selectedIndex]?.text || '';
+      const message = document.getElementById('message').value.trim();
+      
+      let text = `Здравствуйте! Меня зовут ${name}.%0A`;
+      text += `Телефон: ${phone}%0A`;
+      text += `Интересует: ${serviceText}%0A`;
+      if (message) text += `Сообщение: ${message}`;
+      
+      window.open(`https://wa.me/996702570011?text=${text}`, '_blank');
+      
       form.classList.add('success');
       setTimeout(() => {
         form.classList.remove('success');
         form.reset();
-      }, 4000);
+      }, 3000);
     });
   }
 
