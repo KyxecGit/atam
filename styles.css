@@ -804,7 +804,7 @@ body.cursor-hover .cursor-follower {
   position: relative;
   height: 70vh;
   overflow: hidden;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .image-break img {
@@ -977,7 +977,7 @@ body.cursor-hover .cursor-follower {
 
 /* --- PORTFOLIO CTA --- */
 .portfolio-cta {
-  padding: 6rem var(--pad);
+  padding: 4rem var(--pad);
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
