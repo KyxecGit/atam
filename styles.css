@@ -842,73 +842,59 @@ body.cursor-hover .cursor-follower {
 
 /* --- PORTFOLIO CTA --- */
 .portfolio-cta {
-  padding: 80px var(--pad);
-  background: linear-gradient(135deg, rgba(200,255,0,.05) 0%, transparent 100%);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  padding: 60px var(--pad);
 }
 
-.portfolio-cta .container {
-  max-width: 900px;
-  margin: 0 auto;
+.portfolio-cta__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-decoration: none;
+  color: var(--text-2);
+  transition: color .3s;
 }
 
-.portfolio-cta__content {
-  text-align: center;
-}
-
-.portfolio-cta__content .section-tag {
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.portfolio-cta__content h2 {
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  font-weight: 800;
-  margin-bottom: 20px;
-  letter-spacing: -2px;
-  line-height: 1.15;
-}
-
-.portfolio-cta__content h2 em {
-  font-style: normal;
+.portfolio-cta__link:hover {
   color: var(--accent);
 }
 
-.portfolio-cta__desc {
-  font-size: 18px;
-  color: var(--text-2);
-  margin-bottom: 40px;
-  line-height: 1.6;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.portfolio-cta__link:hover .portfolio-cta__line {
+  background: var(--accent);
 }
 
-.portfolio-cta .btn {
-  display: inline-flex;
-  gap: 10px;
-  padding: 16px 32px !important;
-  font-size: 16px !important;
-  border-radius: 60px !important;
+.portfolio-cta__line {
+  flex: 1;
+  max-width: 200px;
+  height: 1px;
+  background: var(--border);
+  transition: background .3s;
+}
+
+.portfolio-cta__text {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.portfolio-cta__link svg {
+  flex-shrink: 0;
+  transition: transform .3s;
+}
+
+.portfolio-cta__link:hover svg {
+  transform: translate(3px, -3px);
 }
 
 @media (max-width: 768px) {
   .portfolio-cta {
-    padding: 60px var(--pad);
+    padding: 40px var(--pad);
   }
-  
-  .portfolio-cta__content h2 {
-    font-size: 2rem;
-  }
-  
-  .portfolio-cta__desc {
-    font-size: 16px;
-  }
-  
-  .portfolio-cta .btn {
-    padding: 14px 24px !important;
-    font-size: 14px !important;
+  .portfolio-cta__line {
+    display: none;
   }
 }
 
